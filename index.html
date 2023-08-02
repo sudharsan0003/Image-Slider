@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Slider</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <!-- slider taken from swipe slider website-->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/anna-kurasova-CLMMORTdMAw-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/fernando-meloni-j_gnGCDQRew-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/johnny-briggs-u8qxwT2VnBE-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/kyle-thacker-cNMgKxev6ak-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/nick-fewings-WyQjazeH9H4-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/quynh-do-P-0MG1GjYhQ-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/rizknas-tqvF1JXzOxs-unsplash.jpg"
+              alt=""
+              width=""
+              height=""
+            />
+          </div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    ;
+    <script>
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
